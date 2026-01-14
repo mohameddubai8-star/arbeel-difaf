@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>تسجيل الدخول</title>
+<style>
+body{
+font-family:Arial;
+background:#f2f4f8;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+.box{
+background:#fff;
+padding:30px;
+border-radius:10px;
+width:300px;
+text-align:center;
+}
+input,button{
+width:100%;
+padding:10px;
+margin-top:15px;
+}
+button{
+background:#1e88e5;
+color:#fff;
+border:none;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h3>تسجيل الدخول</h3>
+<input type="password" id="pass" placeholder="الرقم السري">
+<button onclick="login()">دخول</button>
+</div>
+
+<script>
+function login(){
+if(document.getElementById("pass").value==="2020300"){
+window.location.href="dashboard.html";
+}else{
+alert("رقم سري غير صحيح");
+}
+}
+</script>
+
+</body>
+</html>
